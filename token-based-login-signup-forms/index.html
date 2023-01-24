@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>Sign-in | Guvi</title>
+
+        <!-- CDN for Bootstrap 5.0.2 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+        <!-- CDN for jQuery Core 3.6.3 -->
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+        <!-- sign-in CSS -->
+        <link rel="stylesheet" href="./css/sign-in.css">
+
+        <!-- sign-up Js -->
+        <script src="./js/sign-in.js"></script>
+
+    </head>
+
+    <body>
+        <form class="row position-relative justify-content-around align-items-center">
+
+            <!-- Spinner to check token-->
+            <div id="load" class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        
+
+            <!-- Left side Part -->
+            <div class="col-lg-4 col-sm-10">
+                <img class="img-fluid" id= "logo" src="./images/side-art.svg" alt="Guvi Logo">
+            </div>
+
+            <!-- Right Side Part -->
+            <div class="col-lg-4 col-sm-10">
+
+                <!-- Logo -->
+                <img class="rounded mx-auto d-block w-50" id= "logo" src="./images/logo.svg" alt="Guvi Logo">
+
+                <h1 class="col mb-3 text-center">Welcome..!</h1>
+
+                <!-- Email -->
+                <div class="mb-3">
+                    <label class="form-label" for="email">Email address</label>
+                    <input class="form-control" type="email" placeholder="Enter Email" id="email">
+                    <div class="col text-danger text-end" id="emailStatus"></div>
+                </div>
+
+                <!-- Password -->
+                <div class="mb-3">
+                    <label class="form-label" for="password">Password</label>
+                    <input class="form-control" type="password" placeholder="Password" id="password">
+                    <div class="col text-danger text-end" id="passwordStatus"></div>
+                </div>
+
+                <!-- Error Message -->
+                <div class="text-danger mb-3 text-center" id="status"></div>
+
+                <!-- Forget Password -->
+                <div class="col text-secondary text-end mb-1" id ="btnForgetPassword">
+                    <a>Forget Password?</a>
+                </div>
+
+                <!-- Login Button -->
+                <div class="d-grid gap-2 mb-3">
+                    <button class="btn btn-primary" id="btnLogin">Login</button>
+                </div>
+
+                <!-- Footer content -->
+                <div class="col footer">
+                    Don't you have an account?
+                    <a id="btnSignUp">Sign up</a>
+                </div>
+
+            </div>
+            
+        </form>
+    </body>
+</html>

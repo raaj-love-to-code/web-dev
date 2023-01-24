@@ -1,0 +1,17 @@
+$outer-padding: 20px;
+
+@mixin navigate($color:black){
+
+    cursor: pointer;
+
+    &:hover{
+        color: $color !important;
+        text-decoration: underline !important;
+    }
+
+}
+
+@mixin footer(){
+    color: grey;
+    text-align: center;
+}

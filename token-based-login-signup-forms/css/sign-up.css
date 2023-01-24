@@ -1,0 +1,11 @@
+.footer {
+  color: grey;
+  text-align: center;
+}
+.footer a {
+  cursor: pointer;
+}
+.footer a:hover {
+  color: black !important;
+  text-decoration: underline !important;
+}/*# sourceMappingURL=sign-up.css.map */

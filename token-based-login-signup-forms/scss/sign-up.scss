@@ -1,0 +1,9 @@
+@import "master";
+
+.footer{
+    @include footer();
+
+    a{
+        @include navigate(black);
+    }
+}

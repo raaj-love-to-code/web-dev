@@ -1,0 +1,21 @@
+body {
+  padding: 20px;
+  z-index: 1;
+}
+
+.footer {
+  color: grey;
+  text-align: center;
+}
+
+a {
+  cursor: pointer;
+}
+a:hover {
+  color: black !important;
+  text-decoration: underline !important;
+}
+
+#load {
+  position: absolute;
+}/*# sourceMappingURL=sign-in.css.map */

@@ -1,0 +1,21 @@
+@import "master";
+
+body{
+    padding: $outer-padding;
+    z-index: 1;
+}
+
+.footer{
+    @include footer();
+}
+
+a{
+    @include navigate(black);
+}
+
+
+#load{
+    position: absolute;
+}
+
+

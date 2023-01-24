@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GUVI | Sign-up</title>
+
+         <!-- CDN for Bootstrap 5.0.2 -->
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+        <!-- CDN for jQuery Core 3.6.3 -->
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        
+        <!-- sign-up CSS -->
+        <link rel="stylesheet" href="../css/sign-up.css">
+
+        <!-- sign-in Js -->
+        <script src="../js/sign-up.js"></script>
+    </head>
+
+    <body>
+
+        <form class="row justify-content-around align-items-center">
+            
+            <!-- Left side Part -->
+            <div class="col-lg-4 col-sm-10">
+                <img class="img-fluid" id= "logo" src="../images/side-art.svg" alt="Guvi Logo">
+            </div>
+
+            <!-- Right Side Part -->
+            <div class="col-lg-4 col-sm-10">
+
+                <!-- Logo -->
+                <img class="rounded mx-auto d-block w-25" id= "logo" src="../images/logo.svg" alt="Guvi Logo">
+
+                <!-- .Name -->
+                <div class="mb-3">
+                    <label class="form-label" for="name">Name</label>
+                    <input class="form-control" type="text" placeholder="Enter Name" id="name">
+                    <div class="col text-danger text-end" id="name-status"></div>
+                </div>
+
+                <!-- Mobile Number -->
+                <div class="mb-3">
+                    <label class="form-label" for="mobile">Mobile Number</label>
+                    <input class="form-control" type="tel" placeholder="Mobile Number" id="mobile">
+                    <div class="col text-danger text-end" id="mobile-status"></div>
+                </div>
+
+                <!-- Email Address -->
+                <div class="mb-3">
+                    <label class="form-label" for="email">Email address</label>
+                    <input class="form-control" type="email" placeholder="Enter Email" id="email">
+                    <div class="col text-danger text-end" id="email-status"></div>
+                </div>
+
+                <!-- Password -->
+                <div class="mb-3">
+                    <label class="form-label" for="password">Password</label>
+                    <input class="form-control" type="password" placeholder="Password" id="password">
+                    <div class="col text-danger text-start" id="password-status"></div>
+                </div>
+
+                <!-- Confirm Password -->
+                <div class="mb-3">
+                    <label class="form-label" for="confirm-password">Confirm Password</label>
+                    <input class="form-control" type="password" placeholder="Confirm Password" id="confirm-password">
+                    <div class="col text-danger text-end" id="confirm-password-status"></div>
+                </div>
+
+                <!-- Error Message -->
+                <div class="text-danger mb-3 text-center" id="status"></div>
+
+                <!-- Sign up button -->
+                <div class="d-grid gap-2 mb-3">
+                    <button class="btn btn-primary" id="btn-signup">Sign Up</button>
+                </div>
+
+                <!-- Footer -->
+                <div class="col footer">
+                    Already registered user?
+                    <a id="btn-login">Log In</a>
+                </div>
+
+            </div>
+
+        </form>
+
+    </body>
+</html>
