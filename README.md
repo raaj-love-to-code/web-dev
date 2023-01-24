@@ -2,8 +2,8 @@
 
 This is the simple project of sign-in and sign-up form
 
-Tech stach : HTML, SASS, JS(JQuery), PHP
-Servers : MongoDB(primary), Redis
+--Tech stach : HTML, SASS, JS(JQuery), PHP
+--Servers : MongoDB(primary), Redis
 
 - After first successful login a token will be generated and stored in Redis and the local storage of the browser
 - On every step of navigation, this tokens will be validated and if it fails, the user will be redirected to the login page
